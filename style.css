@@ -35,7 +35,15 @@ h1 {
     }
 
     .dashboard {
-        background-image: linear-gradient(gray, black);
+        background-image: linear-gradient(red, blue);
+        border-radius: 25px;
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
 
 /* id rules */
@@ -78,4 +86,14 @@ h1 {
 
 #dec:hover {
     border: 1px solid green;
+}
+
+/* @media rules */
+
+@media screen and (max-width: 600px) {
+    .column {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
