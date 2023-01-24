@@ -1,7 +1,8 @@
 let temperature = {
     f: 72,
     c: function() {
-        return Math.round((this.f - 32) * 5/9);
+        let c = (this.f - 32) * 5/9;
+        return parseFloat(c.toPrecision(3));
     }
 }
 
